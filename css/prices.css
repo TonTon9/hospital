@@ -1,0 +1,77 @@
+.prices {
+
+}
+
+.prices__body {
+  position: relative;
+  padding: 101px 0 120px 0;
+}
+
+@media (max-width: 1000px) {
+  .prices__body {
+    padding: 60px 0 40px 0;
+  }
+}
+
+.prices__body > p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #474B4F;
+  margin-bottom: 48px;
+}
+
+.prices__main {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 420px;
+}
+
+@media (max-width: 1000px) {
+  .prices__main {
+    max-height: 720px;
+  }
+}
+
+@media (max-width: 600px) {
+  .prices__main {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+}
+
+.prices__item {
+  margin-bottom: 50px;
+}
+
+.prices__item:hover a {
+  color: #0C5CAB;
+}
+
+.prices__item span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #474B4F;
+  margin-right: 20px;
+}
+
+.prices__item a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #474B4F;
+}
+/*# sourceMappingURL=prices.css.map */

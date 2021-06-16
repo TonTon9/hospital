@@ -1,0 +1,239 @@
+.document_ {
+  display: block;
+}
+
+.document__body {
+  margin: 0 auto;
+  max-width: 1470px;
+  position: relative;
+  padding: 101px 0 120px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 500px) {
+  .document__body {
+    padding: 60px 0 30px 0;
+  }
+}
+
+@media (max-width: 1170px) {
+  .document__body {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.document__ava {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.document__ava > * {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
+@media (max-width: 1170px) {
+  .document__ava > * {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.document__ava img {
+  max-width: 386px;
+  max-height: 386px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.document__ava button {
+  margin-bottom: 50px;
+  border-radius: 60px;
+  border: 1px solid #0C5CAB;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  width: 386px;
+  height: 60px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  color: #0C5CAB;
+}
+
+.document__ava button:hover {
+  border: none;
+  color: white;
+  background: #0C5CAB;
+}
+
+@media (max-width: 387px) {
+  .document__ava button {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+.document__spoilerses {
+  width: 100%;
+  height: 100%;
+}
+
+.document__spoilerses > div > div {
+  margin-bottom: 20px;
+}
+
+.document__left {
+  width: 40%;
+}
+
+.document__left > div {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.spoiler__text p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #474B4F;
+}
+
+.spoiler__button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #474B4F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.spoiler__button::after {
+  display: none;
+}
+
+.spoiler__button span {
+  width: 23px;
+  height: 20px;
+  position: relative;
+}
+
+.spoiler__button span::after, .spoiler__button span::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #CFCFCF;
+}
+
+.spoiler__button span::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 7px;
+}
+
+.spoiler__button span:after {
+  bottom: 11px;
+}
+
+.document__wiki p:first-child {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  color: #A9A9A9;
+}
+
+.document__wiki p:nth-child(2) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  /* identical to box height, or 125% */
+  color: #0C5CAB;
+  margin-bottom: 32px;
+}
+
+.document__wiki .document__staj {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  text-transform: uppercase;
+  color: #A9A9A9;
+}
+
+.document__wiki .document__staj-nmber {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 18px;
+  color: #474B4F;
+}
+
+.document__cost p:first-child {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color: #474B4F;
+  margin-bottom: 32px;
+}
+
+.document__cost table {
+  width: 100%;
+}
+
+.document__cost table tr:nth-child(odd) {
+  background: #F0F7FC;
+}
+
+.document__cost table td {
+  text-align: start;
+  padding: 14px 26px 10px 26px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #474B4F;
+}
+
+@media (max-width: 500px) {
+  .document__cost table td {
+    padding: 14px 5px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+/*# sourceMappingURL=documents.css.map */

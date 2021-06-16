@@ -1,0 +1,139 @@
+.block404 {
+  background: #E6F6FC;
+}
+
+.block404__body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-width: 1343px;
+  margin: 0 auto;
+}
+
+.block404__bread {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #A9A9A9;
+  z-index: 1;
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.block404__bread p:nth-child(2) {
+  padding: 0 8px;
+}
+
+.block404__bread p, .block404__bread a {
+  text-decoration: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #A9A9A9;
+  margin-right: 8px;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.block404__bread p:hover, .block404__bread a:hover {
+  text-decoration: underline;
+  color: #0C5CAB;
+}
+
+.block404__main {
+  padding: 196px 0 255px 0;
+  position: relative;
+}
+
+@media (max-width: 1000px) {
+  .block404__main {
+    padding: 60px 0 40px 0;
+  }
+}
+
+.block404__main > p {
+  max-width: 560px;
+  font-family: "Open Sans";
+  font-style: normal;
+  color: #474B4F;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.block404__main > p:first-child {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 18px;
+}
+
+.block404__main > p:last-child {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 343px;
+  line-height: 343px;
+  font-family: "Open Sans";
+  letter-spacing: 0.01em;
+  color: #0C5CAB;
+}
+
+@media (max-width: 1400px) {
+  .block404__main > p:last-child {
+    display: none;
+  }
+}
+
+.block404__button {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 59px;
+  width: 313px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFD12A;
+  border-radius: 60px;
+}
+
+.block404__button:hover {
+  background: #0C5CAB;
+}
+
+.block404__button:hover p {
+  color: white;
+}
+
+.block404__button p {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #333333;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+@media (max-width: 314px) {
+  .block404__button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=404.css.map */
